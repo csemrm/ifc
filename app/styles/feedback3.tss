@@ -1,0 +1,159 @@
+//step 1
+"#stepMainView" : {
+	height : Ti.UI.SIZE,
+	top : 10,
+	width : 296
+},
+".stepView" : {
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	layout : "vertical"
+},
+".labelStyle" : {
+	height : Ti.UI.SIZE,
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+}
+"#step1Image" : {
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 35
+},
+"#step1Label" : {
+	text : "Step 1",
+	color : "#67cee3"
+},
+//dot line "View"
+".dotlineView" : {
+	width : 51,
+	height : 2,
+	backgroundColor : "#67cee3",
+	top : 15
+},
+// step 2
+"#step2Image" : {
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 35
+},
+"#step2Label" : {
+	text : "Step 2",
+	color : "#67cee3"
+	
+},
+//step 3
+"#step3Image" :{
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 34
+},
+"#step3Label" :{
+	text : "Step 3",
+	color : "#fff"
+},
+// done 
+"#doneImage" : {
+	image : "/images/icon/done-Icon.png",
+	width : 35,
+	height : 35
+},
+"#doneLabel" : {
+	text : "Done",
+	color : "#67cee3"
+},
+//all info "Label"
+"#all_InfoLabel" : {
+	text : "All information submitted will be treated confidentially but may be shared with other statutory organizations, for regulatory bodies such as the Care Quality Commission.",
+	font : {
+		fontSize : 12,
+		fontFamily : "Roboto-Light"
+	},
+	color : "#fff",
+	//left : 13,
+	//right : 13,
+	top : 15,
+	width : 294
+},
+// check box "View"
+"#emailCheckBoxView" : {
+	height : Ti.UI.SIZE,
+	top : 10,
+	width : 294
+},
+"#checkBoxImage" : {
+	image : "/images/icon/category-DisSelect.png",
+	width : 35,
+	height : 35,
+	left : 0,
+	selected : false
+},
+"#checkBoxLabel" : {
+	left : 45,
+	text : "If you wish to contacted about your ideas please tick this box and enter your email address below.",
+	font : {
+          fontSize : 12,
+          FontFamily : "Roboto-Light"
+   },
+   color : "#fff"
+}
+
+//email label
+"#emailLabel" : {
+	text : "Email",
+	height : Ti.UI.SIZE,
+	font : {
+		fontSize : 12,
+		fontFamily : "Roboto-Light"
+	},
+	color : "#fff",
+	//left : 13,
+	//right : 13,
+	top : 15,
+	width : 294
+},
+"#bottom_BtnView" : {
+	height : 41,
+	borderRadius : 4,
+	//left : 13,
+	//right : 13,
+	bottom : 20,
+	backgroundColor : "#e67e22",
+	width : 294
+},
+".bottom_Btn_style" : {
+	width : 146,
+	height : Ti.UI.FILL,
+	color : "#fff",
+	backgroundColor : "#e67e22",
+},
+"#backBtn" : {
+	left : 0,
+	title : "Back"
+},
+"#btn_verticalView" : {
+	width : 1,
+	height : 41,
+	backgroundColor : "#ea9143"
+},
+"#nextBtn" : {
+	right : 0,
+	title : "Next",
+	backgroundColor : "#e67e22",
+	color : "#fff",
+	enabled : true
+},
+"#emailText" : {	
+	top : 15,
+	borderRadius : 4,
+	width : 294,	
+	backgroundColor : "#fff",
+	paddingLeft : 5,	
+	hintText : 'email address',
+	height : 32,
+	font : {
+		fontSize : 14
+	},
+	enabled : false 
+}

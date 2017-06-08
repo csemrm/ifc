@@ -1,0 +1,57 @@
+"#videoPlayer" :{
+	 backgroundColor : '#000',
+     movieControlMode : Titanium.Media.VIDEO_CONTROL_NONE,
+     fullscreen : false,
+     autoplay : false
+},
+"#buttonView" :{
+	width: 250
+},
+"#playBtn" :{
+	top: 12,
+	image: '/images/button/play.png',
+	//title: '',
+	height: 45,
+	width: 55
+},
+"#retake" :{
+	title: 'Retake',
+	left: 0,
+	tintColor: '#fff'
+},
+"#useVideo" :{
+	title: 'Use Video',
+	right: 0,
+	tintColor: '#fff'
+},
+"#topBannerView" :{
+	top:0,
+	height: 37,
+	width: Ti.UI.FILL,
+	backgroundColor: 'rgba(76,76,76,0.65)'
+},
+"#bottomBannerView" :{
+	bottom: 0,
+	height: 72,
+	width: Ti.UI.FILL,
+	backgroundColor: 'rgba(76,76,76,0.65)'
+},
+"#timer" :{
+	width: 50
+},
+"#recordingIndicator" :{
+	left: 0,
+	height: 8,
+	width: 8,
+	borderRadius: 4,
+	backgroundColor: 'red'
+	//bottom: 15
+},
+"#timeLbl" :{
+	//right: 0,
+	text:'00:00',
+	font:{
+		fontWeight: 'bold'
+	},
+	color: '#fff' 
+}

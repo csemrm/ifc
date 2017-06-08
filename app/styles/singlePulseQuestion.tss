@@ -1,0 +1,18 @@
+".involvementSectionView" :{
+	layout : 'vertical',
+	height : Ti.UI.SIZE,
+	top : 15,
+	width : 296
+},
+".Label_Style" :{
+	font : {
+		fontSize : 14,
+		fontFamily : "Roboto-Light"
+	},
+	color : "#fff",
+	left : 0,
+	right : 0
+},
+"#sliderSuggestion":{
+	value : 1
+}

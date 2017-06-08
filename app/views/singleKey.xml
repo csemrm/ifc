@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="keyView" onTouchend="viewClickFunction">
+		<Label id="keyLabel"/>	
+		<Label id="characterLabel"/>
+	</View>
+</Alloy>

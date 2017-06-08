@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="shadow_parent">
+		<View id="headerView">
+			<View id="topView">
+				<Require src="menuBtn" id="menuButton"/>
+			</View>
+		</View>
+	</View>
+</Alloy>

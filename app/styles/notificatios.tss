@@ -1,0 +1,5 @@
+"#notificationsTableView" : {
+	minRowHeight : 44,
+	top : 100,
+	editable : true
+}

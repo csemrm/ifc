@@ -1,0 +1,37 @@
+<Alloy>
+    <Window id="homescreenWin">
+        <View id="buttonMainContainerView">
+            <View id="aboutView" class="viewStyle">
+                <Button id="aboutButton"  onTouchend="aboutButtonTouchend"/>
+                <Label id="aboutLabel"/>
+            </View>
+            <View id="staffPluseView" class="viewStyle">
+                <Button id="staffPluseButton"  onTouchend="staffPluseButtonTouchend"/>
+                <Label id="staffPluseLabel"/>
+            </View>
+            <View id="indicatorView"/>
+            <View id="notificationView" class="viewStyle">
+                <Button id="notificationButton"  onTouchend="notificationButtonTouchend"/>
+                <Label id="notificationLabel"/>
+            </View>
+            <View id="haveAnIdeaView" class="viewStyle">
+                <Button id="haveAnIdeaButton" onTouchend="haveAnIdeaButtonTouchend"/>
+                <Label id="haveAnIdeaLabel"/>
+            </View>
+            <View id="downloadsView" class="viewStyle">
+                <Button id="downloadsButton" onTouchend="downloadsButtonTouchend"/>
+                <Label id="downloadsLabel"/>
+            </View>
+            <View id="litmusTestView" class="viewStyle">
+                <Button id="litnusTestButton"  onTouchend="litmusTestButtonTouchend"/>
+                <Label id="litmusTestLabel"/>
+            </View>
+            <View id="termOfUseView" onTouchend="termUseButtonTouchend" class="viewStyle">
+                <Button id="termOfUseButton"/>
+                <Label id="termOfUseLabel"/>
+            </View>
+        </View>
+        <Button id="watchVideoButton" onTouchend="watchVideoTouchEndFunction"/>
+        <VideoPlayer id="videoPlayer" ns="Ti.Media" onComplete="videoComplete" onFullscreen="hideVideoPlayer"/>
+    </Window>
+</Alloy>

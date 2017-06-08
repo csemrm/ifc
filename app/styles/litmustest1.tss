@@ -1,0 +1,134 @@
+//step 1
+"#stepMainView" : {
+	height : Ti.UI.SIZE,
+	top : 10,
+	width : 295
+},
+".stepView" : {
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	layout : "vertical"
+},
+".labelStyle" : {
+	height : Ti.UI.SIZE,
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+}
+"#step1Image" : {
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 35
+},
+"#step1Label" : {
+	text : "Step 1",
+	color : "#fff"
+},
+//dot line "View"
+".dotlineView" : {
+	width : 222,
+	height : 2,
+	backgroundColor : "#67cee3",
+	top : 15
+},
+// done 
+"#doneImage" : {
+	image : "/images/icon/done-Icon.png",
+	width : 35,
+	height : 35
+},
+"#doneLabel" : {
+	text : "Done",
+	color : "#67cee3"
+},
+
+// select position and department
+".selectView" : {
+	backgroundColor : '#4c4c4c',
+	height : 32,
+	//left : 11,
+	//right : 13,
+	width : Ti.UI.FILL,
+	borderRadius  : 4,
+	width : 296
+},
+".LabelStyle" : {
+	font : {
+		fontSize : 14,
+		fontWeight : "normal"
+	},
+	color : "#fff",
+	left : 14
+},
+".VerticalStyle" : {
+	backgroundColor : '#414141',
+	height: 32,
+	width : 1,
+	right : 40
+},
+".arrowBtnStyle" : {
+	backgroundImage : "/images/icon/select-Icon.png",
+	width : 19,
+	height : 16,
+	right : 10
+},
+"#positionLabel" : {
+	text : "Select Position",
+	//touchEnabled : false
+},
+"#departmentLabel" : {
+	text : "Select Department",
+	//touchEnabled : false
+},
+//label with icon privacy and security
+".horizontalView" : {
+	height : Ti.UI.SIZE
+},
+"#securityImage" : {
+	image : "/images/icon/security-Icon.png",
+	width : 24,
+	height : 31,
+	left : 35
+},
+"#securityLabel" : {
+	text : "Feedback is completely anonymous and there is no way the manager can identify you as the feedback sender.",
+	height : Ti.UI.SIZE,
+	font : {
+		fontWeight : "normal",
+		fontSize : 10
+	},
+	color : "#fff",
+	left : 94,
+	right : 35
+},
+"#privacyImage" : {
+	image : "/images/icon/privacy-Icon.png",
+	width : 36,
+	height : 33,
+	left : 28
+},
+"#privacyLabel" : {
+	text : "Feedback is recieved only by the manager of the community (and not by other members). He may, However, share it with others.",
+	height : Ti.UI.SIZE,
+	font : {
+		fontWeight : "normal",
+		fontSize : 10
+	},
+	color : "#fff",
+	left : 94,
+	right : 35
+},
+//next "Button"
+"#nextButton" : {
+	title : "Next",
+	//left : 11,
+	//right : 13,
+	backgroundColor : "#67cee3",
+	color : "#3dbfd9",
+	height : 41,
+	bottom : 20,
+	borderRadius : 4,
+	enabled : false,
+	width : 296
+}

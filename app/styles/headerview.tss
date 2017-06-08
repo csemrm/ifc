@@ -1,0 +1,26 @@
+"#headerView" : {
+	backgroundImage : '/images/bg/title-Bar.png',
+	top : 0,
+	width : Ti.UI.FILL,
+	height : 100
+},
+"#topView" : {
+	top : 20
+},
+"#titleLabel" : {
+	text : "Feedback",
+	right : 90,
+	font : {
+		fontFamily : "Roboto-Light",
+		fontSize : 24
+	},
+	color : "#e67e22",
+	height : Ti.UI.SIZE,
+	width : Ti.UI.SIZE
+}
+"#LogoImage" : {
+	right : 15,
+	image : "/images/button/feedback-Logo.png",
+	width : 63,
+	height : 63	
+}

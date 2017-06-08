@@ -1,0 +1,32 @@
+"#keyView":{
+	width : 100,
+	height : 70,
+	backgroundColor : "#2d8fa3",
+	left : 5,
+	bottom : 5,
+	borderRadius : 2
+	
+},
+"#keyLabel":{
+	font : {
+		fontSize : 40,
+		fontWeight : 'normal'
+	},
+	text : '',
+	color : "#fff",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+	touchEnabled : false,
+	top : 5
+},
+"#characterLabel":{
+	font : {
+		fontSize : 15,
+		fontWeight : 'normal'
+	},
+	text : '',
+	color : "#6cb1bf",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+	bottom : 5,
+	text : 'ABC',
+	touchEnabled : false
+}

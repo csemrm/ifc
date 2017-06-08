@@ -1,0 +1,28 @@
+<Alloy>
+    <Window id="litmusTest2Win" onFocus="litmusTest2WinFocus">
+        <ActivityIndicator id="activityIndicator" />
+        <ScrollView id="mainContainerView" bottom="76">
+            <View id="stepMainView">
+                <View class="stepView" left="1">
+                    <ImageView id="step1Image"/>
+                    <Label id="step1Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" left="39"/>
+                <View class="stepView" right="0">
+                    <ImageView id="doneImage"/>
+                    <Label id="doneLabel" class="labelStyle"/>
+                </View>
+            </View>
+            <Label id="recommendedServiceLabel" />
+            <View id="recommendedServiceView">
+                <Button id="yesBtn" class="btnStyle" onTouchend="yesBtnTouchEnd" />
+                <Button id="noBtn" class="btnStyle" onTouchend="noBtnTouchEnd" />
+            </View>
+        </ScrollView>
+        <View id="bottom_BtnView">
+            <Button id="backBtn" onTouchend="backBtnClick" />
+            <View id="btn_verticalView" />
+            <Button id="submitBtn" onTouchend="submitBtnClick" />
+        </View>
+    </Window>
+</Alloy>

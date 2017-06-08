@@ -1,0 +1,7 @@
+"#menuButton" :{
+	backgroundImage : "/images/button/menu-Btn.png",
+	width : 65,
+	height : 80,
+	title : "",
+	left : 0
+}

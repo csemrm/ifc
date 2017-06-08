@@ -1,0 +1,9 @@
+<Alloy>
+    <View id="headerView">
+        <View id="topView">
+            <Require src="menuBtn" id="menuButton"/>
+            <Label id="titleLabel"/>
+            <ImageView id="LogoImage"/>
+        </View>
+    </View>
+</Alloy>

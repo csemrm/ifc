@@ -1,0 +1,114 @@
+//step 1
+"#stepMainView" : {
+	height : Ti.UI.SIZE,
+	top : 10,
+	width : 295
+},
+".stepView" : {
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	layout : "vertical"
+},
+".labelStyle" : {
+	height : Ti.UI.SIZE,
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+}
+"#step1Image" : {
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 35
+},
+"#step1Label" : {
+	text : "Step 1",
+	color : "#64d0e4"
+},
+//dot line "View"
+".dotlineView" : {
+	width : 222,
+	height : 2,
+	backgroundColor : "#fff",
+	top : 15
+},
+// done 
+"#doneImage" : {
+	image : "/images/icon/step-Done-Icon.png",
+	width : 35,
+	height : 35
+},
+"#doneLabel" : {
+	text : "Done",
+	color : "#fff"
+},
+
+// recommended serviec label
+"#recommendedServiceLabel" : {
+	text : "",
+	font : {
+		fontWeight : "bold",
+		fontSize : 15
+	},
+	color : "#fff",
+	height : Ti.UI.SIZE,
+	//left : 13,
+	//right : 13,
+	top : 20	,
+	width : 294
+},
+// yes or no button 
+"#recommendedServiceView" : {
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE,
+	top : 65
+},
+".btnStyle" : {
+	height : 65,
+	title : "" 
+},
+"#yesBtn" : {
+	width : 105,
+	backgroundImage : "/images/button/yes-Btn.png",
+	left : 48,
+	value : "1"
+},
+"#noBtn" : {
+	width : 100,
+	backgroundImage : "/images/button/no-Btn.png",
+	right : 48,
+	value : "0"
+},
+//submit "Button" and back "Button"
+"#bottom_BtnView" : {
+    height : 41,
+	borderRadius : 4,
+	//left : 13,
+	//right : 13,
+	bottom : 20,
+	backgroundColor : "#e67e22",
+	width : 294
+},
+"#backBtn" : {
+	title : "Back",
+	left : 0,
+	width : 146,
+	height : Ti.UI.FILL,
+	backgroundColor : "#e67e22",
+	color : "#fff"
+},
+"#btn_verticalView" : {
+	width : 1,
+	height : 41,
+	backgroundColor : "#ea9143"
+},
+"#submitBtn" : {
+	width : 146,
+	height : 41,
+	title : "Submit",
+	backgroundColor : "#67cee3",
+	selectedColor : "#358596",
+	color : "#3dbfd9",
+	right : 0,
+	enabled : false	
+}

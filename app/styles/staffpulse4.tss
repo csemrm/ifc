@@ -1,0 +1,121 @@
+//step 1
+"#stepMainView" :{
+	height : Ti.UI.SIZE,
+	top : 10,
+	width : 296
+},
+".stepView" :{
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	layout : "vertical"
+},
+".labelStyle" :{
+	height : Ti.UI.SIZE,
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+},
+"#step1Image" :{
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 34
+},
+"#step1Label" :{
+	text : "Step 1",
+	color : "#67cee3"
+},
+//dot line "View"
+".dotlineView" :{
+	width : 52,
+	height : 2,
+	backgroundColor : "#67cee3",
+	top : 15
+},
+// step 2
+"#step2Image" :{
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 34
+},
+"#step2Label" :{
+	text : "Step 2",
+	color : "#67cee3"
+},
+//step 3
+"#step3Image" :{
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 34
+},
+"#step3Label" :{
+	text : "Step 3",
+	color : "#67cee3"
+},
+// done
+"#doneImage" :{
+	image : "/images/icon/step-Done-Icon.png",
+	width : 35,
+	height : 34
+},
+"#doneLabel" :{
+	text : "Done",
+	color : "#fff"
+},
+//motivation "Label"
+"#motivationLabel" :{
+	text : "",
+	top : 20,
+	font :{
+		fontSize : 17,
+		fontFamily : "Roboto-Bold"
+	},
+	color : "#fff",
+	//left : 13,
+	//right : 13,
+	height : Ti.UI.SIZE,
+	width : 294
+},
+
+".Label_Style" :{
+	font : {
+		fontSize : 14,
+		fontFamily : "Roboto-Light"
+	},
+	color : "#fff",
+	left : 14,
+	right : 14
+},
+
+"#bottom_BtnView" : {
+	height : 41,
+	borderRadius : 4,
+	//left : 13,
+	//right : 13,
+	bottom : 20,
+	backgroundColor : "#e67e22",
+	width : 294
+},
+".bottom_Btn_style" : {
+	width : 146,
+	height : Ti.UI.FILL,
+	backgroundColor : "#e67e22",
+	color : "#fff"
+},
+"#backBtn" : {
+	left : 0,
+	title : "Back"
+},
+"#btn_verticalView" : {
+	width : 1,
+	height : 41,
+	backgroundColor : "#ea9143"
+},
+"#sutmitBtn" : {
+	right : 0,
+	title : "Submit",
+	//backgroundColor  : "#e67e22",
+	//enabled : true,
+	//color : "#3dbfd9"
+}
+

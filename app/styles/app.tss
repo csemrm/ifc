@@ -1,0 +1,62 @@
+"Window[platform=ios]" : {
+	backgroundColor: '#3dbfd9',
+	backButtonTitle : '',
+	orientationModes:[Ti.UI.PORTRAIT],
+	navBarHidden : true,
+	theme : "Theme.AppCompat.Translucent.NoTitleBar",
+},
+"Window[platform=android]" : {
+	backgroundColor: '#3dbfd9',
+	backButtonTitle : '',
+	orientationModes:[Ti.UI.PORTRAIT],
+	//navBarHidden : true,
+	theme : "Theme.AppCompat.Translucent.NoTitleBar",
+},
+"#activityIndicator" : {
+	color: '#CCC',
+	message: 'Please Wait...' ,
+	backgroundColor: 'rgba(0,0,0,0.7)',
+	font: {
+		fontFamily: 'Helvetica Neue',
+		fontSize: 20,
+		fontWeight: 'bold'
+	},
+	
+	height: '100%',
+	width: '100%',
+	zIndex: 9000,
+	top: 0,
+	left: 0,
+	style: Titanium.UI.ActivityIndicatorStyle.PLAIN
+},
+"TextField" : {
+	clearButtonMode : Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+	color : '#000',
+	autocapitalization : Ti.UI.TEXT_AUTOCAPITALIZATION_NONE
+},
+".styledBtn" : {
+	backgroundLeftCap : 57,
+	left : 13,
+	right : 13,
+	height : 41,
+	borderRadius : 4
+},
+".sliderCommon" : {
+	top : 15,
+	min : 1,
+	max : 5,
+	thumbImage : "images/bg/thumbImage-1.png",
+	leftTrackImage : "images/bg/leftTrackImage-1.png",
+	leftTrackLeftCap : 5,
+	rightTrackImage : "images/bg/rightTrackImage.png",
+	left : 0,
+	right : 0,
+	value : 1
+},
+// main contaniner "View"
+"#mainContainerView" :{
+	layout : 'vertical',
+	height : Ti.UI.SIZE,
+	width : Ti.UI.FILL,
+	top : 100
+}

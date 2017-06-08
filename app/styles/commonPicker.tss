@@ -1,0 +1,35 @@
+// "Picker"
+"#pickerView" : {
+	height: 260,
+	bottom: -260,
+	zIndex: 100,
+	width : Titanium.UI.FILL
+},"#toolbar" : {
+	top: 0
+},
+"#cancel[platform=ios]" : {
+	title: 'Cancel',
+	style: Titanium.UI.iOS.SystemButtonStyle.BORDERED
+},
+"#cancel[platform=android]" : {
+	title: 'Cancel',
+	//style: Titanium.UI.iOS.SystemButtonStyle.BORDERED
+},
+"#done[platform=ios]" : {
+	title: 'Done',
+	style: Titanium.UI.iOS.SystemButtonStyle.DONE
+},
+"#done[platform=android]" : {
+	title: 'Done',
+	//style: Titanium.UI.iOS.SystemButtonStyle.DONE
+},
+"#spacer[platform=ios]" : {
+	systemButton: Titanium.UI.iOS.SystemButton.FLEXIBLE_SPACE
+},
+"#spacer[platform=android]" : {
+	//systemButton: Titanium.UI.iOS.SystemButton.FLEXIBLE_SPACE
+},
+"#commonLabel" : {
+	text : "",
+	color : "#3dbfd9"	
+}

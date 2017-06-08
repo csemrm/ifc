@@ -1,0 +1,15 @@
+"#videoplayerWindow":{
+	orientationModes : [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT],
+	width : Ti.UI.FILL
+}
+"#videoPlayer":{
+	//backgroundColor : 'blue',
+	movieControlMode : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+	//scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT,
+	fullscreen : true,
+	autoplay : true,
+	top : 0,
+	left: 0,
+	right: 0,
+	width : Ti.UI.FILL
+}

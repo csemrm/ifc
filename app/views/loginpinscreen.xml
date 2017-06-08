@@ -1,0 +1,14 @@
+<Alloy>
+	<Window  id="loginWin">
+		<ActivityIndicator id="activityIndicator" />
+		<View id="topImageView">
+			<ImageView id="client_logo"/>
+			<ImageView id="ideas_logo"/>
+		</View>
+		<View id="TextFieldView">
+			<TextField id="loginPinTextField"/>
+			<Button id="lockButton" onTouchend="lockButtonClickFunction"/>
+		</View>
+		<View id="keypadView"/>
+	</Window>
+</Alloy>

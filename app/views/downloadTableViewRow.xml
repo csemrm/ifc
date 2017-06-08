@@ -1,0 +1,12 @@
+<Alloy>
+    <Window id="downloadsPdfWin" onClose="downloadCloseFn">
+    	<ActivityIndicator id="activityIndicator" />
+        <View id="headerView">
+            <View id="topView">
+                <Button id="backBtn" onTouchend="backBtnTouchend" />
+                <Label id="winTitleLabel" />
+            </View>
+        </View>
+        <WebView id="downloadPdfWebView" top="100" />
+    </Window>
+</Alloy>

@@ -1,0 +1,46 @@
+<Alloy>
+	<View id="menuView" top="0">
+		<View height="20" top="0" backgroundColor="#fff" platform="ios"/>
+		<View height="0" top="0" backgroundColor="#fff" platform="android"/>
+		<ImageView id="menuHeaderImageView" />
+		<TableView id="leftMenuTable" onClick="menu">
+			<TableViewRow id="home" height="50">
+				<ImageView id="homeImage" />
+				<Label id="homeLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="aboutUs" height="50">
+				<ImageView id="aboutUsImage" />
+				<Label id="aboutUsLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="feesback" height="50">
+				<ImageView id="feedbackImage" />
+				<Label id="feedbackLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="downloads" height="50">
+				<ImageView id="downloadsImage" />
+				<Label id="downloadsLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="litmusTest" height="50">
+				<ImageView id="litmusTestImage" />
+				<Label id="litmusTestLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="staffPulse" height="50">
+				<ImageView id="staffPulseImage" />
+				<Label id="staffPulseLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="termsOfUse" height="50">
+				<ImageView id="termsOfUseImage" />
+				<Label id="termsOfUseLabel" class="labelStyle" />
+			</TableViewRow>
+			<TableViewRow id="notifications" height="50">
+				<ImageView id="notificationsImage" />
+				<Label id="notificationsLabel" class="labelStyle" />
+				<View id="indicatorTableViewRowView" />
+			</TableViewRow>
+			<TableViewRow id="logout" height="50">
+				<ImageView id="logoutImage" />
+				<Label id="logoutLabel" class="labelStyle" />
+			</TableViewRow>
+		</TableView>
+	</View>
+</Alloy>

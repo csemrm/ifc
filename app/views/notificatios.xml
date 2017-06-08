@@ -1,0 +1,6 @@
+<Alloy>
+    <Window id="notificatiosWin" onFocus="notificatiosWinFocus">
+    		<ActivityIndicator id="activityIndicator" />
+        <TableView id="notificationsTableView" onClick="notificationsTableViewClick" onDelete="tableDeleteFunction"/>
+    </Window>
+</Alloy>

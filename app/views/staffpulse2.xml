@@ -1,0 +1,34 @@
+<Alloy>
+	<Window id="staffpulseWin2">
+		<ScrollView id="mainContainerView" bottom="76">
+			<View id="stepMainView">
+				<View class="stepView" left="1">
+					<ImageView id="step1Image"/>
+					<Label id="step1Label" class="labelStyle"/>
+				</View>
+				<View class="dotlineView" left="39" backgroundColor="#fff" />
+				<View class="stepView" left="85">
+					<ImageView id="step2Image"/>
+					<Label id="step2Label" class="labelStyle"/>
+				</View>
+				<View class="dotlineView" left="124"/>
+				<View class="stepView" left="171">
+					<ImageView id="step3Image"/>
+					<Label id="step3Label" class="labelStyle"/>
+				</View>
+				<View class="dotlineView" right="35"/>
+				<View class="stepView" right="0">
+					<ImageView id="doneImage"/>
+					<Label id="doneLabel" class="labelStyle"/>
+				</View>
+			</View>
+			<Label id="involvementLabel" />
+			<View id="questionView" layout="vertical"/>			
+		</ScrollView>
+		<View id="bottom_BtnView">
+			<Button id="backBtn" class="bottom_Btn_style" onTouchend="backBtnClick"/>
+			<View id="btn_verticalView" />
+			<Button id="nextBtn" class="bottom_Btn_style" onTouchend="nextBtnClick"/>
+		</View>
+	</Window>
+</Alloy>

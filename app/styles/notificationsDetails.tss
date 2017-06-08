@@ -1,0 +1,39 @@
+"#headerView" : {
+	backgroundImage : '/images/bg/title-Bar.png',
+	top : 0,
+	width : Ti.UI.FILL,
+	height : 100
+},
+"#topView" : {
+	top : 20
+}
+"#backBtn" : {
+	backgroundImage : "images/button/back-title-Btn.png",
+	width : 65,
+	height : 80,
+	left : 0,
+	title : ""
+},
+"#winTitleLabel" : {
+	text : "",
+	font : {
+		fontFamily : "Roboto-Light",
+		fontSize : 24
+	},
+	color : "#51c4d4",
+	height : Titanium.UI.SIZE,
+	width : 150,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER 
+},
+"#detailsTextLabel" : {
+	text : "",
+	font : {
+		fontFamily : "Roboto-Light",
+		fontSize : 12
+	},
+	color : "#fff",
+	height : Ti.UI.SIZE,
+	left : 13,
+	right : 13,
+	top : 20
+}

@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="downloadsWin" onFocus="winFocusFunction">
+		<ActivityIndicator id="activityIndicator" />
+		<TableView id="downloadTableView" top="100"></TableView>
+	</Window>
+</Alloy>

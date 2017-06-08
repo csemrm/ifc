@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" backgroundColor="#fff"  backgroundImage="images/bg/Default-568h@2x.png" id='indexWin' zIndex='100' platform="ios"/>
+	<Window class="container" backgroundColor="#fff"  backgroundImage="images/default.png" id='indexWin' zIndex='100' platform="android"/>
+	<!-- <Require src="leftmenu" id='leftmenu'/> -->
+	<!-- </Window> -->
+	<!-- <Require src="infoscreen" id='infoscreen'></Require> -->
+</Alloy>

@@ -1,0 +1,156 @@
+// feedback3 step 1, step 2 done  and dot line
+"#stepMainView" : {
+	height : Ti.UI.SIZE,
+	top : 10,
+	width : 296
+},
+".stepView" : {
+	width : Ti.UI.SIZE,
+	height : Ti.UI.SIZE,
+	layout : "vertical"
+},
+".labelStyle" : {
+	height : Ti.UI.SIZE,
+	font : {
+		fontSize : 14,
+		fontWeight : "bold"
+	}
+}
+"#step1Image" : {
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 35
+},
+"#step1Label" : {
+	text : "Step 1",
+	color : "#67cee3"
+},
+".dotlineView" : {
+	width : 51,
+	height : 2,
+	backgroundColor : "#fff",
+	top : 15
+},
+"#step2Image" : {
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 35
+},
+"#step2Label" : {
+	text : "Step 2",
+	color : "#67cee3"
+	
+},
+//step 3
+"#step3Image" :{
+	image : "/images/icon/step-Enable-Icon.png",
+	width : 35,
+	height : 34
+},
+"#step3Label" :{
+	text : "Step 3",
+	color : "#67cee3"
+},
+"#doneImage" : {
+	image : "/images/icon/step-Done-Icon.png",
+	width : 35,
+	height : 35
+},
+"#doneLabel" : {
+	text : "Done",
+	color : "#fff"
+},
+// select category label
+"#selectCategoryLabel" : {
+	text : "Please select a category that best describes your idea:",
+	//left : 13,
+	//right : 13,
+	height : Ti.UI.SIZE,
+	font : {
+		fontWeight : "normal",
+		fontSize : 11 
+	},
+	color : "#fff",
+	top : 20,
+	width : 294
+},
+// category select and disselect with label name 
+"#categoryMainView" : {
+	height : Ti.UI.SIZE,
+	top : 15,
+	layout : "vertical",
+	width : 294
+},
+
+// submit "Button"
+"#bottom_BtnView" : {
+    height : 41,
+	borderRadius : 4,
+	//left : 13,
+	//right : 13,
+	bottom : 20,
+	backgroundColor : "#e67e22",
+	width : 294
+},
+"#backBtn" : {
+	title : "Back",
+	left : 0,
+	width : 146,
+	height : Ti.UI.FILL,
+	backgroundColor : "#e67e22",
+	color : "#fff"
+},
+"#btn_verticalView" : {
+	width : 1,
+	height : 41,
+	backgroundColor : "#ea9143"
+},
+"#submitBtn" : {
+	width : 146,
+	height : 41,
+	//backgroundLeftCap : 57,
+	title : "Submit",
+	//backgroundImage : "/images/button/submit1.png",
+	backgroundColor : "#67cee3",
+	selectedColor : "#358596",
+	color : "#3dbfd9",
+	right : 0,
+	enabled : false	
+},
+// tool tip
+"#toolTipView" : {
+	height : 83,
+	width : 298,
+	visible : false
+},
+"#toolTip" : {
+	backgroundColor : "#869ca0",
+	height : 72,
+	top : 0,
+	borderRadius : 6
+},
+"#tipLabel" : {
+	font : {
+		fontSize : 11,
+		fontFamily : "Roboto-Bold"
+	},
+	color : "#fff",
+	left : 13,
+	right : 13,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+"#cancelBtn" : {
+	 backgroundImage : "/images/icon/cancel-Btn.png",
+     width : 40,
+     height : 40,
+     right : 0,
+     top : 0
+},
+"#arrow" : {
+    image : "/images/icon/arrow.png",
+	width : 18,
+	height : 11,
+	bottom : 0
+}
+ 

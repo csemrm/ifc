@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="involvementSectionView">
+		<Label id="suggestionLabel" class="Label_Style"/>
+		<Slider id="sliderSuggestion" class="sliderCommon" onTouchend="sliderTouchEnd" onChange="sliderChangeFunction"/>
+	</View>
+</Alloy>

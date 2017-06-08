@@ -1,0 +1,42 @@
+<Alloy>
+    <Window id="feedback4Win" onFocus="feedback4WinFocus">
+        <ActivityIndicator id="activityIndicator" />
+        <ScrollView id="mainContainerView" bottom="76">            
+            <View id="stepMainView">
+                <View class="stepView" left="1">
+                    <ImageView id="step1Image"/>
+                    <Label id="step1Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" left="39"/>
+                <View class="stepView" left="85">
+                    <ImageView id="step2Image"/>
+                    <Label id="step2Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" left="124"/>
+                <View class="stepView" left="171">
+                    <ImageView id="step3Image"/>
+                    <Label id="step3Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" right="35"/>
+                <View class="stepView" right="0">
+                    <ImageView id="doneImage"/>
+                    <Label id="doneLabel" class="labelStyle"/>
+                </View>
+            </View>
+            <Label id="selectCategoryLabel" />
+            <View id="categoryMainView"/>
+        </ScrollView>
+        <View id="bottom_BtnView">
+            <Button id="backBtn" onTouchend="backBtnClick" />
+            <View id="btn_verticalView" />
+            <Button id="submitBtn" onTouchend="submitBtnClick" />
+        </View>
+        <View id="toolTipView">
+            <View id="toolTip">
+                <Label id="tipLabel" />
+            </View>
+            <Button id="cancelBtn"  onTouchend="cancelBtnClick" />
+            <ImageView id="arrow" />
+        </View>
+    </Window>
+</Alloy>

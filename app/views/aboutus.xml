@@ -1,0 +1,9 @@
+<Alloy>
+    <Window id="aboutUSWin">
+        <ActivityIndicator id="activityIndicator" />
+        <ScrollView id="mainContainerView">
+            <VideoPlayer id="videoPlayer" ns="Ti.Media" onError="videoError" onLoad="videoLoaded"></VideoPlayer>/>
+            <Label id="aboutTextLabel"  />
+        </ScrollView>
+    </Window>
+</Alloy>

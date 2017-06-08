@@ -1,0 +1,21 @@
+"#videoPlayer": {
+	left: 13,
+	height: 200,
+	right: 13,
+	backgroundColor: "#515151",
+	top: 20,
+	autoplay: false,
+	mediaControlStyle: Titanium.Media.VIDEO_CONTROL_EMBEDDED
+},
+"#aboutTextLabel": {
+	top: 5,
+	height: Ti.UI.SIZE,
+	left: 13,
+	right: 13,
+	font: {
+		fontSize: 14,
+		fontFamily: "Roboto-Light"
+	},
+	color: "#fff",
+	text: ""
+}

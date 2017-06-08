@@ -1,0 +1,6 @@
+<Alloy>
+    <View id="buttonView">
+        <ImageView id="commonImage"/>
+        <Label id="commonLabel"/>
+    </View>
+</Alloy>

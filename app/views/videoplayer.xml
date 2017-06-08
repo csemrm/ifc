@@ -1,0 +1,16 @@
+<Alloy>
+	<Window fullscreen="true" id="videoplayerWindow" zIndex="1000">
+        <VideoPlayer id="videoPlayer">
+        	<View id="topBannerView">
+	        	<Label id="timeLbl"/>	
+        	</View>
+        	<View id="bottomBannerView">
+        		<View id="buttonView">
+        		<Button id="retake" onClick="retakeVideo" />
+        		<ImageView id="playBtn" onClick="playVideo" />
+        		<Button id="useVideo" onClick="saveVideo" />
+        		</View>
+       		</View>
+       	</VideoPlayer>
+ </Window>                                                                                            
+</Alloy>

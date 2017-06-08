@@ -1,0 +1,22 @@
+
+"#shadow_parent": {
+	//backgroundColor: '#fff',
+	//opacity: 0.8,
+	height: Titanium.UI.FILL,
+	width:  Titanium.UI.FILL,
+	left: 250
+}
+
+"#topView": {
+	top: 20,
+	height: 80,
+	left: 0,
+	width:  Titanium.UI.SIZE
+}
+
+"#headerView": {
+	backgroundImage: '/images/bg/title-Bar.png',
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 100
+},

@@ -1,0 +1,13 @@
+<Alloy>
+	<View id="pickerView">
+		<Toolbar id="toolbar" platform="ios">
+			<Items>
+				<Button id="cancel" onClick="cancelFunction" platform="ios"/>
+				<Button id="spacer"/>
+				<Label id="commonLabel"/>
+				<Button id="spacer"/>
+				<Button id="done" onClick="doneFunction" platform="ios"/>
+			</Items>
+		</Toolbar>
+	</View>
+</Alloy>

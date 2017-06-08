@@ -1,0 +1,13 @@
+<Alloy>
+    <Window id="notificationsDetailsWin">
+        <View id="headerView">
+            <View id="topView">
+                <Button id="backBtn" onTouchend="backBtnTouchend" />
+                <Label id="winTitleLabel"/>
+            </View>
+        </View>
+        <ScrollView id="mainContainerView">
+            <Label id="detailsTextLabel" />
+        </ScrollView>
+    </Window>
+</Alloy>
