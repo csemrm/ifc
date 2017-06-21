@@ -12,7 +12,7 @@
     <navbar-hidden>false</navbar-hidden>
     <analytics>false</analytics>
     <!--<guid>801733cc-5dc2-4760-9bbb-9b8c24f6f01f</guid> -->
-    <guid>3883c68d-4afa-4b12-9555-f75c655f26b4</guid>
+    <guid>44338058-7ac2-4a0a-9bbb-ee0979e87d16</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
@@ -106,5 +106,5 @@
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
-    <property name="appc-app-id" type="string">584021987d91b2ae62137c9e</property>
+    <property name="appc-app-id" type="string">593951d390b3e337d668096f</property>
 </ti:app>
