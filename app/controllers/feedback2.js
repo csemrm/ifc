@@ -109,15 +109,95 @@ var recordedVideo = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDir
 
 var video_capturing = false;
 function recordVideoBtnClick() {
-    clearTimer();
-    $.cameraOverlayView.show();
-    currentCamera = null;
-    Ti.Media.showCamera({
-        success : function(e) {
-            if (e.success) {
+
+    if (Ti.Platform.osname == "android") {
+        Ti.API.log("android");
+        if (!checkPermissionForCameraAndMicrophone()) {
+            requestPermissionForCameraAndMicrophone();
+        } else {
+            androidVideo();
+        }
+    } else {
+        clearTimer();
+        $.cameraOverlayView.show();
+        currentCamera = null;
+        Ti.Media.showCamera({
+            success : function(e) {
+                if (e.success) {
+                    clearTimer();
+                    $.recordBtn.visible = true;
+                    $.stopBtn.visible = false;
+
+                    if (recordedVideo.exists()) {
+                        recordedVideo.deleteFile();
+                        recordedVideo = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, 'feedback.mp4');
+                    }
+                    // bug fix for video player caching issue :)
+                    $.videoPlayer.media = null;
+                    recordedVideo.write(e.media);
+                    $.videoPlayer.show();
+
+                    header.hide();
+                    $.feedback2Win.fullscreen = true;
+
+                    Ti.Media.hideCamera();
+                    videoLength = counter;
+                    //clearTimer();
+
+                    setTimeout(function() {
+                        $.videoPlayer.media = recordedVideo;
+                        // $.videoPlayer.play();
+                        $.playBtn.visible = true;
+                        $.pauseBtn.visible = false;
+                        // playerTimer = setInterval(playerTimerIncrement, 1000);
+                    }, 1000);
+                }
+            },
+            error : function(error) {
                 clearTimer();
-                $.recordBtn.visible = true;
+                var a = Ti.UI.createAlertDialog({
+                    title : 'Camera'
+                });
+                if (error.code == Ti.Media.NO_CAMERA) {
+                    a.setMessage('Device does not have video recording capabilities');
+                } else {
+                    a.setMessage('Unexpected error: ' + error.code);
+                }
+                a.show();
+            },
+            overlay : $.cameraOverlayView, //cameraWrapperViewBugFixing,
+            videoMaximumDuration : 30000,
+            videoQuality : Titanium.Media.QUALITY_HIGH,
+            showControls : false,
+            allowEditing : false, //
+            autohide : false,
+            mediaTypes : Ti.Media.MEDIA_TYPE_VIDEO,
+            animated : false,
+            transform : Ti.UI.create2DMatrix().scale(1)
+        });
+        switchCamera();
+    }
+
+};
+
+function androidVideo() {
+
+    var intent = Titanium.Android.createIntent({
+        action : 'android.media.action.VIDEO_CAPTURE'
+    });
+    var curActivity = $.feedback2Win.getActivity();
+
+    curActivity.startActivityForResult(intent, function(e) {
+
+        if (e.resultCode == Ti.Android.RESULT_OK) {
+            if (e.intent.data != null) {
+                videoUri = e.intent.data;
+                var source = Ti.Filesystem.getFile(videoUri);
+                clearTimer();
+                $.recordBtn.visible = false;
                 $.stopBtn.visible = false;
+                // bug fix for video player caching issue :)
+                $.videoPlayer.media = null;
 
                 if (recordedVideo.exists()) {
                     recordedVideo.deleteFile();
@@ -125,48 +205,71 @@ function recordVideoBtnClick() {
                 }
                 // bug fix for video player caching issue :)
                 $.videoPlayer.media = null;
-                recordedVideo.write(e.media);
-                $.videoPlayer.show();
+                source.copy(recordedVideo.nativePath);
+                Alloy.Globals.feedbackFormData['data[Feedback][vdo]'] = recordedVideo.read();
+                Ti.API.error('recordedVideo' + recordedVideo.nativePath);
+                $.dialog.show();
+                videoLength = 00;
 
-                header.hide();
-                $.feedback2Win.fullscreen = true;
-
-                Ti.Media.hideCamera();
-                videoLength = counter;
-                //clearTimer();
-
-                setTimeout(function() {
-                    $.videoPlayer.media = recordedVideo;
-                    // $.videoPlayer.play();
-                    $.playBtn.visible = true;
-                    $.pauseBtn.visible = false;
-                    // playerTimer = setInterval(playerTimerIncrement, 1000);
-                }, 1000);
-            }
-        },
-        error : function(error) {
-            clearTimer();
-            var a = Ti.UI.createAlertDialog({
-                title : 'Camera'
-            });
-            if (error.code == Ti.Media.NO_CAMERA) {
-                a.setMessage('Device does not have video recording capabilities');
             } else {
-                a.setMessage('Unexpected error: ' + error.code);
+                Ti.API.error('Could not retrieve media URL!');
             }
-            a.show();
-        },
-        overlay : $.cameraOverlayView, //cameraWrapperViewBugFixing,
-        videoMaximumDuration : 30000,
-        videoQuality : Titanium.Media.QUALITY_HIGH,
-        showControls : false,
-        allowEditing : false, //
-        autohide : false,
-        mediaTypes : Ti.Media.MEDIA_TYPE_VIDEO,
-        animated : false,
-        transform : Ti.UI.create2DMatrix().scale(1)
+        } else if (e.resultCode == Ti.Android.RESULT_CANCELED) {
+            Ti.API.trace('User cancelled video capture session.');
+        } else {
+            Ti.API.error('Could not record video!');
+        }
     });
-    switchCamera();
+}
+
+var cameraPermission = "android.permission.CAMERA";
+var storagePermission = "android.permission.WRITE_EXTERNAL_STORAGE";
+function checkPermissionForCameraAndMicrophone() {
+    var hasCameraPermission = Ti.Android.hasPermission(cameraPermission);
+    var hasStoragePermission = Ti.Android.hasPermission(storagePermission);
+
+    if (hasCameraPermission && hasStoragePermission) {
+        return true;
+
+    }
+    return false;
+
+};
+function requestPermissionForCameraAndMicrophone() {
+    var hasCameraPermission = Ti.Android.hasPermission(cameraPermission);
+    var hasStoragePermission = Ti.Android.hasPermission(storagePermission);
+
+    var permissionsToRequest = [];
+    if (!hasCameraPermission) {
+        permissionsToRequest.push(cameraPermission);
+    }
+    if (!hasStoragePermission) {
+        permissionsToRequest.push(storagePermission);
+    }
+
+    if (permissionsToRequest.length > 0) {
+        Ti.Android.requestPermissions(permissionsToRequest, function(e) {
+            if (e.success) {
+                androidVideo();
+            } else {
+
+                var alertDialog = Ti.UI.createAlertDialog({
+                    buttonNames : ["No", 'Yes'],
+                    message : "ERROR: " + e.error,
+                    cancel : 0
+                });
+                alertDialog.addEventListener('click', function(evt) {
+                    var intent = Ti.Android.createIntent({
+                        action : 'android.settings.APPLICATION_SETTINGS',
+                    });
+                    intent.addFlags(Ti.Android.FLAG_ACTIVITY_NEW_TASK);
+                    Ti.Android.currentActivity.startActivity(intent);
+                });
+                alertDialog.show();
+
+            }
+        });
+    }
 };
 
 Alloy.Globals.backFromPlayer = false;
@@ -299,5 +402,7 @@ function backBtnClick() {
 };
 
 function nextBtnClick() {
+    Alloy.Globals.feedbackFormData['data[Feedback][problem]'] = $.MLTextArea.value;
+    Alloy.Globals.feedbackFormData['data[Feedback][message]'] = $.solTextArea.value;
     Alloy.Globals.winOpener("feedback3", false, {});
 };
