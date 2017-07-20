@@ -1,10 +1,4 @@
-"#termsOfUseWebView": {
-    top: 100,
-    scalesPageToFit: true,
-    enableZoomControls: false,
-    overScrollMode: Titanium.UI.Android.OVER_SCROLL_IF_CONTENT_SCROLLS,
-    enableZoomControls: false,
-    width: Titanium.UI.FILL,
-    height: Titanium.UI.FILL,
-    borderRadius: 1
+"#termsOfUseWebView" : {
+	top : 100,
+	width : "100%"
 }

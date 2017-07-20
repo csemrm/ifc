@@ -41,14 +41,26 @@
 	height : 41,
 	borderRadius : 4
 },
-".sliderCommon" : {
+".sliderCommon[platform=ios]" : {
 	top : 15,
 	min : 1,
 	max : 5,
-	thumbImage : "images/bg/thumbImage-1.png",
-	leftTrackImage : "images/bg/leftTrackImage-1.png",
+	thumbImage : "/images/bg/thumbImage-1.png",
+	leftTrackImage : "/images/bg/leftTrackImage-1.png",
 	leftTrackLeftCap : 5,
-	rightTrackImage : "images/bg/rightTrackImage.png",
+	rightTrackImage : "/images/bg/rightTrackImage.png",
+	left : 0,
+	right : 0,
+	value : 1
+},
+".sliderCommon[platform=android]" : {
+	top : 15,
+	min : 1,
+	max : 5,
+	//thumbImage : "/images/bg/thumbImage-1-android.png",
+	//leftTrackImage : "/images/bg/leftTrackImage-1-android.png",
+	leftTrackLeftCap : 5,
+	//rightTrackImage : "/images/bg/rightTrackImage-android.png",
 	left : 0,
 	right : 0,
 	value : 1

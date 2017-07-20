@@ -1,18 +1,72 @@
-".involvementSectionView" :{
-	layout : 'vertical',
-	height : Ti.UI.SIZE,
-	top : 15,
-	width : 296
+".involvementSectionView":{
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    top: 15,
+    width: 296
 },
-".Label_Style" :{
-	font : {
-		fontSize : 14,
-		fontFamily : "Roboto-Light"
-	},
-	color : "#fff",
-	left : 0,
-	right : 0
+".Label_Style":{
+    font: {
+        fontSize: 14,
+        fontFamily: "Roboto-Light"
+    },
+    color: "#fff",
+    left: 0,
+    right: 0
 },
 "#sliderSuggestion":{
-	value : 1
+    value: 1
+}
+".commonSliderTitle":{
+    font: {
+        fontSize: 14,
+        fontFamily: "Roboto-Light"
+    }
+}
+"#and1":{
+    image: "/images/bg/thumbImage-1-android.png",
+    center:{
+        x: "4%",
+        y: 8
+    },
+    width: "16",
+    height: 16
+}
+"#and2":{
+    image: "/images/bg/thumbImage-2-android.png",
+    center:{
+        x: "25%",
+        y: 8
+    },
+    width: "16",
+    height: 16
+}
+
+"#and3":{
+    image: "/images/bg/thumbImage-3-android.png",
+    center:{
+        x: "50%",
+        y: 8
+    },
+    width: "16",
+    height: 16
+}
+
+"#and4":{
+    image: "/images/bg/thumbImage-4-android.png",
+    center:{
+        x: "75%",
+        y: 8
+    },
+    width: "16",
+    height: 16
+}
+
+"#and5":{
+    image: "/images/bg/thumbImage-5-android.png",
+    center:{
+        x: "96%",
+        y: 8
+    },
+    width: "16",
+    height: 16
 }

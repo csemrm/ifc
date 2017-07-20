@@ -1,48 +1,48 @@
 <Alloy>
-	<Window id="feedBackWin1">
-		<ScrollView id="mainContainerView">
-			<View id="stepMainView">
-				<View class="stepView" left="1">
-					<ImageView id="step1Image"/>
-					<Label id="step1Label" class="labelStyle"/>
-				</View>
-				<View class="dotlineView" left="39"/>
-				<View class="stepView" left="85">
-					<ImageView id="step2Image"/>
-					<Label id="step2Label" class="labelStyle"/>
-				</View>
-				<View class="dotlineView" left="124"/>
-				<View class="stepView" left="171">
-					<ImageView id="step3Image"/>
-					<Label id="step3Label" class="labelStyle"/>
-				</View>
-				<View class="dotlineView" right="35"/>
-				<View class="stepView" right="0">
-					<ImageView id="doneImage"/>
-					<Label id="doneLabel" class="labelStyle"/>
-				</View>
-			</View>
-			<View class="selectView" top="20" onClick="positionClickFunction">
-				<Label id="positionLabel" class="LabelStyle" platform="ios"/>
-                <Picker id="positionLabel" backgroundColor="transparent" width="100%" class="LabelStyle" platform="android"/>
-				<View id="positionVerticalView" touchEnabled="false" class="VerticalStyle"/>
-				<Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
-			</View>
-			<View class="selectView" top="20" onClick="departmentClickFunction">
-				<Label id="departmentLabel" class="LabelStyle" platform="ios"/>
+    <Window id="feedBackWin1">
+        <ScrollView id="mainContainerView">
+            <View id="stepMainView">
+                <View class="stepView" left="1">
+                    <ImageView id="step1Image"/>
+                    <Label id="step1Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" left="39"/>
+                <View class="stepView" left="85">
+                    <ImageView id="step2Image"/>
+                    <Label id="step2Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" left="124"/>
+                <View class="stepView" left="171">
+                    <ImageView id="step3Image"/>
+                    <Label id="step3Label" class="labelStyle"/>
+                </View>
+                <View class="dotlineView" right="35"/>
+                <View class="stepView" right="0">
+                    <ImageView id="doneImage"/>
+                    <Label id="doneLabel" class="labelStyle"/>
+                </View>
+            </View>
+            <View class="selectView" top="20" onClick="departmentClickFunction">
+                <Label id="departmentLabel" class="LabelStyle" platform="ios"/>
                 <Picker id="departmentLabel" backgroundColor="transparent" width="100%" class="LabelStyle" platform="android"/>
-				<View id="departmentVerticalView" touchEnabled="false" class="VerticalStyle"/>
-				<Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
-			</View>
-			<View class="horizontalView" top="20">
-				<ImageView id="securityImage"/>
-				<Label id="securityLabel"/>
-			</View>
-			<View class="horizontalView" top="15">
-				<ImageView id="privacyImage"/>
-				<Label id="privacyLabel"/>
-			</View>
-		</ScrollView>
-		<Button id="nextButton" onTouchend="nextButtonClick" />
-	</Window>
+                <View id="departmentVerticalView" touchEnabled="false" class="VerticalStyle"/>
+                <Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
+            </View>
+            <View class="selectView" top="20" onClick="positionClickFunction">
+                <Label id="positionLabel" class="LabelStyle" platform="ios"/>
+                <Picker id="positionLabel" backgroundColor="transparent" width="100%" class="LabelStyle" platform="android"/>
+                <View id="positionVerticalView" touchEnabled="false" class="VerticalStyle"/>
+                <Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
+            </View>
+            <View class="horizontalView" top="20">
+                <ImageView id="securityImage"/>
+                <Label id="securityLabel"/>
+            </View>
+            <View class="horizontalView" top="15">
+                <ImageView id="privacyImage"/>
+                <Label id="privacyLabel"/>
+            </View>
+        </ScrollView>
+        <Button id="nextButton" onTouchend="nextButtonClick" />
+    </Window>
 </Alloy>

@@ -14,8 +14,8 @@ Alloy.Globals.alertDialog.addEventListener('click', function(e) {
 Alloy.Globals.device = (Ti.Platform.displayCaps.platformHeight > 480) ? 'iphone5' : 'iphone4';
 
 //all url of ifca
-//Alloy.Globals.root = "http://74.3.255.228/ifc/";
-Alloy.Globals.root = "http://74.3.255.227/ifc_1/";
+//Alloy.Globals.root = "http://custom-ifc-live.appinstitute.co.uk/";
+Alloy.Globals.root = "http://custom-ifc-live.appinstitute.co.uk/";
 Alloy.Globals.allDataURL = "companies/g/1/" + Alloy.Globals.device;
 Alloy.Globals.deviceTokenURL = "users/device_entry/";
 Alloy.Globals.pulseSubmitURL = "pulses_users/add/";

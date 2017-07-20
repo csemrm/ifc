@@ -1,206 +1,209 @@
 //step 1
-"#stepMainView" : {
-	height : Ti.UI.SIZE,
-	top : 10,
-	width : 296
+"#stepMainView": {
+	height: Ti.UI.SIZE,
+	top: 10,
+	width: 296
 },
-".stepView" : {
-	width : Ti.UI.SIZE,
-	height : Ti.UI.SIZE,
-	layout : "vertical"
+".stepView": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: "vertical"
 },
-".labelStyle" : {
-	height : Ti.UI.SIZE,
-	font : {
-		fontSize : 14,
-		fontWeight : "bold"
+".labelStyle": {
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: 14,
+		fontWeight: "bold"
 	}
 }
-"#step1Image" : {
-	image : "/images/icon/step-Enable-Icon.png",
-	width : 35,
-	height : 35
+"#step1Image": {
+	image: "/images/icon/step-Enable-Icon.png",
+	width: 35,
+	height: 35
 },
-"#step1Label" : {
-	text : "Step 1",
-	color : "#67cee3"
+"#step1Label": {
+	text: "Step 1",
+	color: "#67cee3"
 },
 //dot line "View"
-".dotlineView" : {
-	width : 51,
-	height : 2,
-	backgroundColor : "#67cee3",
-	top : 15
+".dotlineView": {
+	width: 51,
+	height: 2,
+	backgroundColor: "#67cee3",
+	top: 15
 },
 // step 2
-"#step2Image" : {
-	image : "/images/icon/step-Enable-Icon.png",
-	width : 35,
-	height : 35
+"#step2Image": {
+	image: "/images/icon/step-Enable-Icon.png",
+	width: 35,
+	height: 35
 },
-"#step2Label" : {
-	text : "Step 2",
-	color : "#fff"
-	
+"#step2Label": {
+	text: "Step 2",
+	color: "#fff"
 },
 //step 3
-"#step3Image" :{
-	image : "/images/icon/step-Disable-Icon.png",
-	width : 35,
-	height : 34
+"#step3Image":{
+	image: "/images/icon/step-Disable-Icon.png",
+	width: 35,
+	height: 34
 },
-"#step3Label" :{
-	text : "Step 3",
-	color : "#67cee3"
+"#step3Label":{
+	text: "Step 3",
+	color: "#67cee3"
 },
-// done 
-"#doneImage" : {
-	image : "/images/icon/done-Icon.png",
-	width : 35,
-	height : 35
+// done
+"#doneImage": {
+	image: "/images/icon/done-Icon.png",
+	width: 35,
+	height: 35
 },
-"#doneLabel" : {
-	text : "Done",
-	color : "#67cee3"
+"#doneLabel": {
+	text: "Done",
+	color: "#67cee3"
 },
 //advice label
-"#adviceLabel" : {
-	text : "Advice: Its is best to register actionable ideas by the formula: What is the issue, What is the  solution, Who can solve it.",
-	height : Ti.UI.SIZE,
-	font : {
-		fontWeight : "normal",
-		fontSize : 10
+"#adviceLabel": {
+	text: "Advice: Its is best to register actionable ideas by the formula: What is the issue, What is the  solution, Who can solve it.",
+	height: Ti.UI.SIZE,
+	font: {
+		fontWeight: "normal",
+		fontSize: 10
 	},
-	color : "#fff",
+	color: "#fff",
 	//left : 13,
 	//right : 13,
-	width : 294,
-	top : 15
+	width: 294,
+	top: 15
 },
 // ml text "View"
-"#MLTextArea" : {
+"#MLTextArea": {
 	//left : 13,
 	//right : 13,
-	width : 294,
-	height : 70,
-	color : "#999",
-	value : "Please suggest your idea...",
-	borderRadius : 4,
-	backgroundColor : "#fff",
-	top : 15,
-	maxLength : 500,
-	font : {
-		fontWeight : "normal",
-		fontSize : 12
+	width: 294,
+	height: 70,
+	color: "#999",
+	value: "Please suggest your idea...",
+	borderRadius: 4,
+	backgroundColor: "#fff",
+	top: 15,
+	maxLength: 500,
+	font: {
+		fontWeight: "normal",
+		fontSize: 12
 	},
+	returnKeyType:  Titanium.UI.RETURNKEY_NEXT,
+	suppressReturn: false
 },
-"#solTextArea" : {
+"#solTextArea": {
 	//left : 13,
 	//right : 13,
-	width : 294,
-	value : "Please suggest possible solution...",
-	color : "#999",
-	height : 70,
-	borderRadius : 4,
-	backgroundColor : "#fff",
-	top : 15,
-	maxLength : 500,
-	font : {
-		fontWeight : "normal",
-		fontSize : 12
+	width: 294,
+	value: "Please suggest possible solution...",
+	color: "#999",
+	height: 70,
+	borderRadius: 4,
+	backgroundColor: "#fff",
+	top: 15,
+	maxLength: 500,
+	font: {
+		fontWeight: "normal",
+		fontSize: 12
 	},
+	returnKeyType:  Titanium.UI.RETURNKEY_NEXT,
+	suppressReturn: false
 },
 // record video label
-"#recordVideoLabel" : {
-	text : "Alternatively you can record a 30 second video explaining your idea.",
-	height : Ti.UI.SIZE,
+"#recordVideoLabel": {
+	text: "Alternatively you can record a 30 second video explaining your idea.",
+	height: Ti.UI.SIZE,
 	//left : 13,
 	//right : 13,
-	font : {
-		fontWeight : "normal",
-		fontSize : 10
+	font: {
+		fontWeight: "normal",
+		fontSize: 10
 	},
-	color : "#fff",
-	top : 20,
-	width : 294
+	color: "#fff",
+	top: 20,
+	width: 294
 },
 //record "Button"
-"#recordVideoBtn[platform=ios]" : {
-	title : "Record Video",
-	backgroundImage : "/images/button/record-video.png",
-	backgroundColor : "#e74c3c",
-	top : 20,
-	selectedColor : "#888787",
-	color : "#fff",
-	borderRadius  : 4,
-	width : 294,
+"#recordVideoBtn[platform=ios]": {
+	title: "Record Video",
+	backgroundImage: "/images/button/record-video.png",
+	backgroundColor: "#e74c3c",
+	top: 20,
+	selectedColor: "#888787",
+	color: "#fff",
+	borderRadius: 4,
+	width: 294,
 	//backgroundRepeat : true,
 	//textAlign : 'left',
-	height : 41
+	height: 41
 },
-"#recordVideoBtn[platform=android]" : {
-	title : "Record Video",
-	backgroundImage : "/images/button/record-view-android.png",
-	backgroundColor : "#e74c3c",
-	top : 20,
-	selectedColor : "#888787",
-	color : "#fff",
-	borderRadius  : 4,
-	width : 294,
+"#recordVideoBtn[platform=android]": {
+	title: "Record Video",
+	backgroundImage: "/images/button/record-view-android.png",
+	backgroundColor: "#e74c3c",
+	top: 20,
+	selectedColor: "#888787",
+	color: "#fff",
+	borderRadius: 4,
+	width: 294,
 	//backgroundRepeat : true,
 	//textAlign : 'left',
-	height : 41
+	height: 41
 },
 
 
 //bottom btn "View"
-"#bottom_BtnView" : {
-	height : 41,
-	borderRadius : 4,
+"#bottom_BtnView": {
+	height: 41,
+	borderRadius: 4,
 	//left : 13,
 	//right : 13,
-	width : 294,
-	bottom : 20,
-	backgroundColor : "#e67e22"
+	width: 294,
+	bottom: 20,
+	backgroundColor: "#e67e22"
 },
-".bottom_Btn_style" : {
-	width : 146,
-	height : Ti.UI.FILL,
-	color : "#fff",
-	backgroundColor : "#e67e22",
+".bottom_Btn_style": {
+	width: 146,
+	height: Ti.UI.FILL,
+	color: "#fff",
+	backgroundColor: "#e67e22"
 },
-"#backBtn" : {
-	left : 0,
-	title : "Back"
+"#backBtn": {
+	left: 0,
+	title: "Back"
 },
-"#btn_verticalView" : {
-	width : 1,
-	height : 41,
-	backgroundColor : "#ea9143"
+"#btn_verticalView": {
+	width: 1,
+	height: 41,
+	backgroundColor: "#ea9143"
 },
-"#nextBtn" : {
-	right : 0,
-	title : "Next",
-	backgroundColor : "#67cee3",
-	color : "#3dbfd9",
-	enabled : false
+"#nextBtn": {
+	right: 0,
+	title: "Next",
+	backgroundColor: "#67cee3",
+	color: "#3dbfd9",
+	enabled: false
 },
-"#topBannerView" :{
-	top:0,
+"#topBannerView":{
+	top: 0,
 	height: 37,
 	width: Ti.UI.FILL,
 	backgroundColor: 'rgba(76,76,76,0.65)'
 },
-"#bottomBannerView" :{
+"#bottomBannerView":{
 	bottom: 0,
 	height: 72,
 	width: Ti.UI.FILL,
 	backgroundColor: 'rgba(76,76,76,0.65)'
 },
-"#timer" :{
+"#timer":{
 	width: 50
 },
-"#recordingIndicator" :{
+"#recordingIndicator":{
 	left: 0,
 	height: 8,
 	width: 8,
@@ -209,71 +212,71 @@
 	visible: false
 	//bottom: 15
 },
-"#timeLbl" :{
+"#timeLbl":{
 	right: 0,
-	text:'00:00',
+	text: '00:00',
 	font:{
 		fontWeight: 'bold'
 	},
-	color: '#fff' 
+	color: '#fff'
 },
-"#cameraChange" :{
+"#cameraChange":{
 	image: '/images/button/camera-reset.png',
 	height: 37,
 	width: 50,
 	//title: '',
 	right: 0
 },
-"#recordBtn" :{
+"#recordBtn":{
 	top: 12,
 	image: '/images/button/camera.png',
 	//title: '',
 	height: 45,
 	width: 55
 },
-"#stopBtn" :{
+"#stopBtn":{
 	top: 12,
 	image: '/images/button/stop-video.png',
 	//title: '',
 	height: 45,
 	width: 55
 },
-"#cancelBtn" :{
+"#cancelBtn":{
 	title: 'Cancel',
 	left: 50,
 	color: '#fff'
 },
 // "VideoPlayer"
-"#videoPlayer" : {
-	backgroundColor : '#000',
-     mediaControlStyle : Titanium.Media.VIDEO_CONTROL_NONE,
-     fullscreen : false,
-     autoplay : false,
-     visible : false
+"#videoPlayer": {
+	backgroundColor: '#000',
+	mediaControlStyle: Titanium.Media.VIDEO_CONTROL_NONE,
+	fullscreen: false,
+	autoplay: false,
+	visible: false
 },
-"#palyerTopBannerView" : {
-	top:0,
+"#palyerTopBannerView": {
+	top: 0,
 	height: 37,
 	width: Ti.UI.FILL,
 	backgroundColor: 'rgba(76,76,76,0.65)'
 },
-"#playerTimeLbl" : {
-	text:'00:00',
+"#playerTimeLbl": {
+	text: '00:00',
 	font:{
 		fontWeight: 'bold'
 	},
-	color: '#fff' 
+	color: '#fff'
 },
-"#playerBottomBannerView" : {
+"#playerBottomBannerView": {
 	bottom: 0,
 	height: 72,
 	width: Ti.UI.FILL,
 	backgroundColor: 'rgba(76,76,76,0.65)'
 },
-"#playerButtonView" : {
-	width : 250
+"#playerButtonView": {
+	width: 250
 },
-"#playBtn" :{
+"#playBtn":{
 	top: 12,
 	image: '/images/button/play.png',
 	//title: '',
@@ -281,7 +284,7 @@
 	height: 45,
 	width: 55
 },
-"#pauseBtn" :{
+"#pauseBtn":{
 	top: 12,
 	image: '/images/button/pause.png',
 	//title: '',
@@ -289,14 +292,16 @@
 	height: 45,
 	width: 55
 },
-"#retake" :{
+"#retake":{
 	title: 'Retake',
 	left: 0,
-	tintColor: '#fff'
+	//tintColor: '#fff',
+	color: '#fff'
 },
-"#useVideo" :{
+"#useVideo":{
 	title: 'Use Video',
 	right: 0,
-	tintColor: '#fff'
+	//tintColor: '#fff',
+	color: '#fff'
 }
 

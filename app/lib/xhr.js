@@ -274,7 +274,6 @@ XHR.prototype.post = function(url, data, onSuccess, onError, extraParams, progre
 			result.code = xhr.status;
 			onError(result);
 		};
-		xhr.setRequestHeader("enctype", "multipart/form-data");
 		xhr.send(data);
 	}
 };
