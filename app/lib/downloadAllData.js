@@ -17,6 +17,7 @@ function downLoadResources(dataArray, callback) {
 		} else {
 			var isOnline = Alloy.Globals.xhr.isOnline();
 			var fileUrl = dataArray[i];
+			if (fileUrl == null) {return;};
 			var stringParts = fileUrl.split('/'), f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, stringParts.pop());
 			if (f.exists()) {
 				f.remoteBackup = false;

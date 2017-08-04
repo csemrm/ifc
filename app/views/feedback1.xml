@@ -21,6 +21,11 @@
                     <ImageView id="doneImage"/>
                     <Label id="doneLabel" class="labelStyle"/>
                 </View>
+            </View><View class="selectView" top="20" onClick="positionClickFunction">
+                <Label id="positionLabel" class="LabelStyle" platform="ios"/>
+                <Picker id="positionLabel" backgroundColor="transparent" width="100%" class="LabelStyle" platform="android"/>
+                <View id="positionVerticalView" touchEnabled="false" class="VerticalStyle"/>
+                <Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
             </View>
             <View class="selectView" top="20" onClick="departmentClickFunction">
                 <Label id="departmentLabel" class="LabelStyle" platform="ios"/>
@@ -28,12 +33,7 @@
                 <View id="departmentVerticalView" touchEnabled="false" class="VerticalStyle"/>
                 <Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
             </View>
-            <View class="selectView" top="20" onClick="positionClickFunction">
-                <Label id="positionLabel" class="LabelStyle" platform="ios"/>
-                <Picker id="positionLabel" backgroundColor="transparent" width="100%" class="LabelStyle" platform="android"/>
-                <View id="positionVerticalView" touchEnabled="false" class="VerticalStyle"/>
-                <Button id="downArrowButton" touchEnabled="false" class="arrowBtnStyle"/>
-            </View>
+            
             <View class="horizontalView" top="20">
                 <ImageView id="securityImage"/>
                 <Label id="securityLabel"/>

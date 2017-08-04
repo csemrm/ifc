@@ -110,7 +110,8 @@
 		fontWeight: "normal",
 		fontSize: 12
 	},
-	returnKeyType:  Titanium.UI.RETURNKEY_NEXT,
+	returnKeyType:  Titanium.UI.RETURNKEY_DONE,
+	enableReturnKey: true,
 	suppressReturn: false
 },
 // record video label

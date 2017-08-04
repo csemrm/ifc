@@ -54,6 +54,7 @@ function MLTextAreaChangeFunction(e) {
 	// $.nextBtn.backgroundColor = "#67cee3";
 	// $.nextBtn.color = "#3dbfd9";
 	// }
+	MLTextAreaReturnFunction();
 };
 
 function MLTextAreaFocus(e) {
@@ -84,6 +85,8 @@ function solTextAreaChangeFunction(e) {
 		$.nextBtn.backgroundColor = "#67cee3";
 		$.nextBtn.color = "#3dbfd9";
 	}
+	//solTextAreaReturnFunction();
+	Alloy.Globals.feedbackFormData['data[Feedback][message]'] = $.solTextArea.value;
 };
 
 function solTextAreaFocus(e) {
@@ -101,7 +104,9 @@ function solTextAreaBlur(e) {
 };
 
 function solTextAreaReturnFunction() {
+    $.solTextArea.blur();
 	Alloy.Globals.feedbackFormData['data[Feedback][message]'] = $.solTextArea.value;
+	
 };
 
 var currentCamera = null;

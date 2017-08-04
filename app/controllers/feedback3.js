@@ -57,10 +57,13 @@ function emailReturnFunction() {
 	if (!!$.emailText.value) {
 		if (!Alloy.Globals.validateEmail(Alloy.Globals.feedbackFormData['data[Feedback][contact]']))
 			alert("Please enter a valid email.");
+	return;
 	}
+	
 };
 
 function nextBtnClick() {
+    emailReturnFunction();
 	Alloy.Globals.winOpener("feedback4", false, {});
 
 };

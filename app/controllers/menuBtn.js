@@ -1,5 +1,5 @@
 function slideMenu() {
-	Ti.API.info('slideMenu');
+	Ti.API.info('slideMenu' + Alloy.Globals.isClosed);
 	if (Alloy.Globals.isClosed === true) {
 		if (Alloy.Globals.OS == 'android') {
 			var menuparent = Ti.UI.createView({
@@ -19,7 +19,6 @@ function slideMenu() {
 				curve : Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
 			});
 		}
-
 		Alloy.Globals.isClosed = false;
 	} else {
 		if (Alloy.Globals.OS == 'android') {

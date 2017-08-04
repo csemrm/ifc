@@ -45,7 +45,7 @@ function doneCallBackFunction(pickerResult) {
 if (Alloy.Globals.OS == 'android') {
 	var columnD = Ti.UI.createPickerColumn();
 	var row = Ti.UI.createPickerRow({
-		title : 'Select Position',
+		title : 'Select Department',
 		id : ''
 	});
 	columnD.addRow(row);
@@ -71,7 +71,7 @@ if (Alloy.Globals.OS == 'android') {
 
 	var columnP = Ti.UI.createPickerColumn();
 	var row = Ti.UI.createPickerRow({
-		title : 'Select Department',
+		title : 'Select Position',
 		id : ''
 	});
 	columnP.addRow(row);

@@ -1,5 +1,5 @@
 <Alloy>
-    <Window id="homescreenWin">
+    <Window id="homescreenWin" exitOnClose="true">
         <View id="buttonMainContainerView">
             <View id="aboutView" class="viewStyle">
                 <Button id="aboutButton"  onTouchend="aboutButtonTouchend"/>

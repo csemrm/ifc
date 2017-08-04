@@ -1,10 +1,11 @@
 <Alloy>
-	<Window id="infoscreenWin" >
-		<View id="info_screen_topView">
-			<View id="topView">
-				<ImageView id="logo_imageView"/>
-			</View>
-		</View>
-		<Button id="loginBtn" class="styledBtn" onTouchend="loginClick"   />
-	</Window>
+    <Window id="infoscreenWin" exitOnClose="true">
+        <View id="info_screen_topView">
+            <View id="topView">
+                <ImageView id="logo_imageView"/>
+            </View>
+        </View>
+        <Button id="loginBtn" class="styledBtn" onTouchend="loginClick"   />
+        <ImageView id="loginBtnRgt"/>
+    </Window>
 </Alloy>
