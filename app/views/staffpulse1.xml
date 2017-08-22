@@ -1,6 +1,10 @@
 <Alloy>
-    <Window id="staffpulseWin1">
-        <ScrollView id="mainContainerView" bottom="76">
+    <Window id="staffpulseWin1" >
+        
+        <Label id="privacyLabel1"/>
+        <Label id="privacyLabel2"/>
+        <ScrollView id="mainContainerView" bottom="76" visible="false">
+            
             <View id="stepMainView">
                 <View class="stepView" left="1">
                     <ImageView id="step1Image"/>

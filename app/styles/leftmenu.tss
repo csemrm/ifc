@@ -72,13 +72,13 @@
 	image: '/images/sliderIcon/feedback-Icon.png'
 },
 "#feedbackLabel":{
-	text: 'Feedback'
+	text: 'Your Ideas'
 },
 "#downloadsImage":{
 	image: '/images/sliderIcon/download-Icon.png'
 },
 "#downloadsLabel":{
-	text: 'Downloads'
+	text: 'Responses'
 },
 "#litmusTestImage":{
 	image: '/images/sliderIcon/litmusTest-Icon.png'

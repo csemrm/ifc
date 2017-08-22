@@ -1,6 +1,7 @@
 <Alloy>
     <Window id="litmustest1Win">
-        <ScrollView id="mainContainerView" bottom="76">
+        <Label id="privacyLabel1"/>
+        <ScrollView id="mainContainerView" bottom="76" visible="false">
             <View id="stepMainView">
                 <View class="stepView" left="1">
                     <ImageView id="step1Image"/>

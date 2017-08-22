@@ -132,3 +132,16 @@
 	enabled : false,
 	width : 296
 }
+
+"#privacyLabel1" : {
+    text : "NHS England’s vision for Staff FFT is that all staff should have the opportunity to feedback their views on their organisation at least once per year. It is hoped that Staff FFT will help to promote a big cultural shift in the NHS, where staff have further opportunity and confidence to speak up, and where the views of staff are increasingly heard and are acted upon. This feature will be available soon and we will keep you posted.",
+    height : Ti.UI.SIZE,
+    font : {
+        fontWeight : "normal",
+        fontSize : 10
+    },
+    color : "#fff",
+    top: 150,
+    left : 35,
+    right : 35
+},

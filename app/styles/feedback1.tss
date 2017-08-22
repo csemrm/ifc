@@ -111,7 +111,7 @@
 	left : 35
 },
 "#securityLabel" : {
-	text : "Feedback is completely anonymous and there is no way the manager can identify you as the feedback sender.",
+	text : "Ideas and suggestions can be submitted anonymously if you would like.",
 	height : Ti.UI.SIZE,
 	font : {
 		fontWeight : "normal",
@@ -128,7 +128,7 @@
 	left : 28
 },
 "#privacyLabel" : {
-	text : "Feedback is recieved only by the manager of the community (and not by other members). He may, However, share it with others.",
+	text : "However if you wish to receive any feedback you must provide your email address at the end of the form.",
 	height : Ti.UI.SIZE,
 	font : {
 		fontWeight : "normal",

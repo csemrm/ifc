@@ -1,5 +1,5 @@
 $.feedback4Win.add(Alloy.createController("headerview", {
-	title : "Feedback",
+	title : "Your Ideas",
 	logoImage : "/images/button/feedback-Logo.png",
 	titleColor : "#e67e22"
 }).getView());

@@ -91,7 +91,7 @@
 },
 "#checkBoxLabel" : {
 	left : 45,
-	text : "If you wish to contacted about your ideas please tick this box and enter your email address below.",
+	text : "If you do not wish to contacted about your ideas please tick this box and enter your email address below.",
 	font : {
           fontSize : 12,
           FontFamily : "Roboto-Light"

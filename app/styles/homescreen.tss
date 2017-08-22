@@ -96,7 +96,7 @@
 	backgroundImage: "/images/button/downloads-Btn.png"
 },
 "#downloadsLabel": {
-	text: "Downloads"
+	text: "Responses"
 },
 // litmus test "Button"
 "#litmusTestView": {

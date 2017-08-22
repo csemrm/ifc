@@ -1,7 +1,7 @@
 
 var _tempFile = null;
 $.downloadsWin.add(Alloy.createController("headerview", {
-	title : "Downloads",
+	title : "Responses",
 	logoImage : "/images/button/downloads-Btn.png",
 	titleColor : "#d93d7f"
 }).getView());

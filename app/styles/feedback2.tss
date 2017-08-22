@@ -64,7 +64,7 @@
 },
 //advice label
 "#adviceLabel": {
-	text: "Advice: Its is best to register actionable ideas by the formula: What is the issue, What is the  solution, Who can solve it.",
+	text: "Advice: Its is best to register actionable ideas by the formula: What is the issue, What is the  solution, Who can solve it. \n\n This pathway is intended for reporting ideas and suggestions for improvement.  Please do not record serious incidents or faulty equipment here",
 	height: Ti.UI.SIZE,
 	font: {
 		fontWeight: "normal",
