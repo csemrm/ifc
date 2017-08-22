@@ -31,7 +31,7 @@
                 <Label id="termOfUseLabel"/>
             </View>
         </View>
-        <View width="294">
+        <View id="watchbtncon">
             <Button id="watchVideoButton" onTouchend="watchVideoTouchEndFunction"/>
             <ImageView id="loginBtnRgt"/>
         </View>

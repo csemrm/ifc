@@ -1,152 +1,156 @@
 "#homescreenWin[platform=ios]":{
-	navBarHidden: true,
-	top: 0,
-	backgroundImage: "images/bg/home-iPhone5-Bg.png",
-	theme: "Theme.AppCompat.Translucent.NoTitleBar"
+    navBarHidden: true,
+    top: 0,
+    backgroundImage: "images/bg/home-iPhone5-Bg.png",
+    theme: "Theme.AppCompat.Translucent.NoTitleBar"
 },
 "#homescreenWin[platform=android]":{
-	//navBarHidden : true,
-	top: 0,
-	backgroundImage: "images/bg/home-iPhone5-Bg.png",
-	theme: "Theme.AppCompat.Translucent.NoTitleBar"
+    //navBarHidden : true,
+    top: 0,
+    backgroundImage: "images/bg/home-iPhone5-Bg.png",
+    theme: "Theme.AppCompat.Translucent.NoTitleBar"
 },
 
 ".viewStyle": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	layout: "vertical"
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    layout: "vertical"
 },
 "#buttonMainContainerView": {
-	width: 260,
-	height: 420
+    width: 260,
+    height: 420
 },
 "Button": {
-	width: 80,
-	height: 80,
-	title: ""
+    width: 80,
+    height: 80,
+    title: ""
 },
 "Label": {
-	font: {
-		fontSize: 11,
-		fontFamily: "Roboto-Light"
-	},
-	color: "#000",
-	height: Ti.UI.SIZE,
-	width: Ti.UI.SIZE,
-	touchEnabled: false,
-	top: 3
+    font: {
+        fontSize: 11,
+        fontFamily: "Roboto-Light"
+    },
+    color: "#000",
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    touchEnabled: false,
+    top: 3
 },
 //about button
 "#aboutView": {
-	top: 0
+    top: 0
 }
 "#aboutButton": {
-	backgroundImage: "/images/button/about-Btn.png"
+    backgroundImage: "/images/button/about-Btn.png"
 }
 "#aboutLabel": {
-	text: "About Us"
+    text: "About Us"
 },
 //staff Pluse "Button"
 "#staffPluseView": {
-	left: 0,
-	top: 70
+    left: 0,
+    top: 70
 },
 "#staffPluseButton": {
-	backgroundImage: "/images/button/staffPluse-Btn.png"
+    backgroundImage: "/images/button/staffPluse-Btn.png"
 },
 "#staffPluseLabel": {
-	text: "Staff Pulse"
+    text: "Staff Pulse"
 },
 // notification "Button"
 "#indicatorView": {
-	width: 30,
-	height: 20,
-	zIndex: 500,
-	top: 85,
-	right: 10,
-	touchEnabled: false,
-	borderRadius: 10
+    width: 30,
+    height: 20,
+    zIndex: 500,
+    top: 85,
+    right: 10,
+    touchEnabled: false,
+    borderRadius: 10
 },
 "#notificationView": {
-	right: 0,
-	top: 70
+    right: 0,
+    top: 70
 },
 "#notificationButton": {
-	backgroundImage: "/images/button/notifications-Btn.png"
+    backgroundImage: "/images/button/notifications-Btn.png"
 },
 "#notificationLabel": {
-	text: "Notifications"
+    text: "Notifications"
 },
 // have an idea "Button"
 "#haveAnIdeaView": {},
 "#haveAnIdeaButton": {
-	backgroundImage: "/images/button/haveAnIdea-Btn.png",
-	width: 109,
-	height: 109
+    backgroundImage: "/images/button/haveAnIdea-Btn.png",
+    width: 109,
+    height: 109
 },
 "#haveAnIdeaLabel": {
-	text: "Have An Idea?"
+    text: "Have An Idea?"
 },
 // downloads "Button"
 "#downloadsView": {
-	bottom: 70,
-	left: 0
+    bottom: 70,
+    left: 0
 },
 "#downloadsButton": {
-	backgroundImage: "/images/button/downloads-Btn.png"
+    backgroundImage: "/images/button/downloads-Btn.png"
 },
 "#downloadsLabel": {
-	text: "Responses"
+    text: "Responses"
 },
 // litmus test "Button"
 "#litmusTestView": {
-	bottom: 70,
-	right: 0
+    bottom: 70,
+    right: 0
 },
 "#litnusTestButton": {
-	backgroundImage: "/images/button/litmusTest-Btn.png"
+    backgroundImage: "/images/button/litmusTest-Btn.png"
 },
 "#litmusTestLabel": {
-	text: "'Litmus Test'"
+    text: "'Litmus Test'"
 },
 // term of use "Button"
 "#termOfUseView": {
-	bottom: 0
+    bottom: 0
 },
 "#termOfUseButton": {
-	backgroundImage: "/images/button/termsOfUse-Btn.png"
+    backgroundImage: "/images/button/termsOfUse-Btn.png"
 },
 "#termOfUseLabel": {
-	text: "Term of Use"
+    text: "Term of Use"
 },
+"#watchbtncon":{
+    borderRadius: 4,
+    height: 41,
+    width: 294,
+    backgroundColor: "#e74c3c",
+    bottom: 15
+}
 // watch demo video "Button
 "#watchVideoButton": {
-	height: 41,
-	width: 294,
-	borderRadius: 4,
-	title: "Watch demo video",
-	backgroundColor: "#e74c3c",
-	bottom: 15,
-	selectedColor: "#888787",
-	color: "#fff"
+    height: 41,
+    width: 294,
+    title: "Watch demo video",
+    backgroundColor: "transparent",
+    selectedColor: "#888787",
+    color: "#fff"
 },
 "#loginBtnRgt": {
     image: "/images/button/record-video.png",
-    bottom: 15,
     right: 0,
     width: 115,
     height: 41
 }
 "#videoPlayer":{
-	//url : '/media/demo.mp4',
-	fullscreen: true,
-	autoplay: false,
-	// top : 0,
-	// left: 0,
-	// right: 0,
-	//width : Ti.UI.FILL,
-	height: 0,
-	zIndex: 1000,
-	visible: false
+    //url : '/media/demo.mp4',
+    fullscreen: true,
+    autoplay: false,
+    // top : 0,
+    // left: 0,
+    // right: 0,
+    //width : Ti.UI.FILL,
+    height: 0,
+    zIndex: 1000,
+    visible: false
 }
 
