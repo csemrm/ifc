@@ -125,12 +125,18 @@
 	width: 294,
 	borderRadius: 4,
 	title: "Watch demo video",
-	backgroundImage: "images/button/record-video.png",
 	backgroundColor: "#e74c3c",
 	bottom: 15,
 	selectedColor: "#888787",
 	color: "#fff"
 },
+"#loginBtnRgt": {
+    image: "/images/button/record-video.png",
+    bottom: 15,
+    right: 0,
+    width: 115,
+    height: 41
+}
 "#videoPlayer":{
 	//url : '/media/demo.mp4',
 	fullscreen: true,

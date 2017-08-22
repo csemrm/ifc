@@ -31,7 +31,10 @@
                 <Label id="termOfUseLabel"/>
             </View>
         </View>
-        <Button id="watchVideoButton" onTouchend="watchVideoTouchEndFunction"/>
+        <View width="294">
+            <Button id="watchVideoButton" onTouchend="watchVideoTouchEndFunction"/>
+            <ImageView id="loginBtnRgt"/>
+        </View>
         <VideoPlayer id="videoPlayer" ns="Ti.Media" onComplete="videoComplete" onFullscreen="hideVideoPlayer"/>
     </Window>
 </Alloy>
