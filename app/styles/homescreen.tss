@@ -107,7 +107,7 @@
     backgroundImage: "/images/button/litmusTest-Btn.png"
 },
 "#litmusTestLabel": {
-    text: "'Litmus Test'"
+    text: "FFT"
 },
 // term of use "Button"
 "#termOfUseView": {

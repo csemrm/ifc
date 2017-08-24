@@ -1,5 +1,5 @@
 $.litmustest1Win.add(Alloy.createController("headerview", {
-	title : "'Litmus Test'",
+	title : "FFT",
 	logoImage : "/images/button/litmusTest-Btn.png",
 	titleColor : "#3cb878"
 }).getView());

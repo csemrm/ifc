@@ -1,61 +1,62 @@
 "#loginWin[platform=ios]":{
-	navBarHidden :true,
-	//theme : "Theme.AppCompat.Translucent.NoTitleBar",
+    navBarHidden: true
 },
 "#loginWin[platform=android]":{
-	//navBarHidden :true,
-	//theme : "Theme.AppCompat.Translucent.NoTitleBar",
+    //navBarHidden :true,
+    //theme : "Theme.AppCompat.Translucent.NoTitleBar",
 },
 "#topImageView":{
-	height : 95,
-	width : Ti.UI.FILL,
-	top : 20
-	
+    height: Titanium.UI.SIZE,
+    width: Ti.UI.FILL,
+    top: 25
 }
 "#client_logo":{
-	//defaultImage : '/images/logo/client-Logo.png',
-	image : "",
-	width : 122,
-	height : 42,
-	right : 26 
+    //defaultImage : '/images/logo/client-Logo.png',
+    image: "",
+    width: 122,
+    height: 42,
+    right: 26 ,
+    preventDefaultImage: true
 },
 "#ideas_logo":{
-	image : '/images/logo/ifc-Logo-White.png',
-	width : 108,
-	height : 46,
-	left : 26 
+    top: 0,
+    left: 26,
+    right: 26,
+    image: '/images/logo/ifc-Logo-White.png',
+    height: Titanium.UI.SIZE,
+    width: Ti.UI.FILL
 },
 "#TextFieldView":{
-	left : 26 ,
-	right : 26,
-	width : Ti.UI.FILL,
-	height : 36,
-	backgroundColor : '#fff',
-	borderRadius : 4,
-	top: 140,
+    left: 26 ,
+    right: 26,
+    width: Ti.UI.FILL,
+    height: 36,
+    backgroundColor: '#fff',
+    borderRadius: 4,
+    top: 140
 },
 "#loginPinTextField":{
-	width : 230,
-	clearButtonMode :Ti.UI.INPUT_BUTTONMODE_NEVER, 	
-	paddingLeft : 8,
-	touchEnabled : false,
-	color : '#888',
-	enabled : false,
-	passwordMask : true,
-	hintText : 'PIN CODE',
-	left : 0
+    width: 230,
+    clearButtonMode:Ti.UI.INPUT_BUTTONMODE_NEVER,
+    paddingLeft: 8,
+    touchEnabled: false,
+    color: '#888',
+    enabled: false,
+    passwordMask: true,
+    hintText: 'PIN CODE',
+    left: 0
 },
 "#lockButton":{
-	backgroundImage : '/images/button/lock-Btn.png',
-	backgroundColor : "#2f8ea4",
-	width : 51,
-	height : 36,
-	val : true,
-	right : 0
+    backgroundImage: '/images/button/lock-Btn.png',
+    backgroundColor: "#2f8ea4",
+    width: 51,
+    height: 36,
+    val: true,
+    right: 0
 },
 "#keypadView":{
-	width : 320,
-	height : Ti.UI.SIZE,
-	bottom : 0,
-	layout : 'horizontal'
+    width: 320,
+    height: Ti.UI.SIZE,
+    bottom: 0,
+    layout: 'horizontal'
 }

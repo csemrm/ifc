@@ -51,6 +51,6 @@
                 <Label id="starLabel"/>
             </View>
         </ScrollView>
-        <Button id="nextButton" onClick="nextButtonClick" />
+        <Button id="nextButton" onClick="nextButtonClick" visible="false" />
     </Window>
 </Alloy>

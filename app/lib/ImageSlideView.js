@@ -58,7 +58,7 @@ function createImageView(image) {
         width : Ti.UI.SIZE,
         height : Ti.UI.SIZE,
         left : 13,
-        top : Alloy.Globals.OS == 'android' ? height - 170 : 120,
+        top : Alloy.Globals.OS == 'android' ? height - 170 : height - 170,
         layout : 'vertical'
 
     });

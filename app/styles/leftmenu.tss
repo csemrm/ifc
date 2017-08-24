@@ -1,131 +1,131 @@
 "ImageView":{
-	width: 36,
-	height: 36,
-	left: 15
+    width: 36,
+    height: 36,
+    left: 15
 },
 "#menuHeaderImageView[platform=ios]":{
-	image: '/images/logo/ifc-Logo-White.png',
-	height: 46,
-	width: 108,
-	left: 20,
-	top: 35
+    image: '/images/logo/ifc-Logo-White.png',
+    height: Titanium.UI.SIZE,
+    width: 210,
+    left: 20,
+    top: 35
 },
 "#menuHeaderImageView[platform=android]":{
-	image: '/images/logo/ifc-Logo-White.png',
-	height: 46,
-	width: 108,
-	left: 20,
-	top: 15
+    image: '/images/logo/ifc-Logo-White.png',
+    height: Titanium.UI.SIZE,
+    width: 210,
+    left: 20,
+    top: 15
 },
 "#menuView":{
-	backgroundImage: '/images/sliderIcon/background_linen.png',
-	backgroundRepeat: true
+    backgroundImage: '/images/sliderIcon/background_linen.png',
+    backgroundRepeat: true
 }
 "#leftMenuTable[platform=ios]":{
-	top: 86,
-	left: 0,
-	width: 250,
-	backgroundColor: 'transparent',
-	//backgroundRepeat : true,
-	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
-	scrollable: true,
-	zIndex: 100
+    top: 86,
+    left: 0,
+    width: 250,
+    backgroundColor: 'transparent',
+    //backgroundRepeat : true,
+    separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
+    scrollable: true,
+    zIndex: 100
 },
 "#leftMenuTable[platform=android]":{
-	top: 66,
-	left: 0,
-	width: 250,
-	backgroundColor: 'transparent',
-	//backgroundRepeat : true,
-	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
-	scrollable: true,
-	zIndex: 100
+    top: 66,
+    left: 0,
+    width: 250,
+    backgroundColor: 'transparent',
+    //backgroundRepeat : true,
+    separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
+    scrollable: true,
+    zIndex: 100
 },
 
 "TableViewRow[platform=ios]":{
-	backgroundColor: 'transparent',
-	// backgroundImage : '/images/sliderIcon/background_linen.png',
-	// backgroundRepeat : true,
-	selectionStyle:Ti.UI.iOS.TableViewCellSelectionStyle.GRAY
+    backgroundColor: 'transparent',
+    // backgroundImage : '/images/sliderIcon/background_linen.png',
+    // backgroundRepeat : true,
+    selectionStyle:Ti.UI.iOS.TableViewCellSelectionStyle.GRAY
 }
 
 "TableViewRow[platform=android]": {
-	// backgroundImage : '/images/sliderIcon/background_linen.png',
-	// backgroundRepeat : true,
-	//selectionStyle:Ti.UI.iOS.TableViewCellSelectionStyle.GRAY,
-	backgroundColor: 'transparent'
+    // backgroundImage : '/images/sliderIcon/background_linen.png',
+    // backgroundRepeat : true,
+    //selectionStyle:Ti.UI.iOS.TableViewCellSelectionStyle.GRAY,
+    backgroundColor: 'transparent'
 },
 
 "#homeImage":{
-	image: '/images/sliderIcon/home.png'
+    image: '/images/sliderIcon/home.png'
 },
 "#homeLabel":{
-	text: 'Home'
+    text: 'Home'
 },
 "#aboutUsImage":{
-	image: '/images/sliderIcon/about-Icon.png'
+    image: '/images/sliderIcon/about-Icon.png'
 },
 "#aboutUsLabel":{
-	text: 'About Us'
+    text: 'About Us'
 },
 "#feedbackImage":{
-	image: '/images/sliderIcon/feedback-Icon.png'
+    image: '/images/sliderIcon/feedback-Icon.png'
 },
 "#feedbackLabel":{
-	text: 'Your Ideas'
+    text: 'Your Ideas'
 },
 "#downloadsImage":{
-	image: '/images/sliderIcon/download-Icon.png'
+    image: '/images/sliderIcon/download-Icon.png'
 },
 "#downloadsLabel":{
-	text: 'Responses'
+    text: 'Responses'
 },
 "#litmusTestImage":{
-	image: '/images/sliderIcon/litmusTest-Icon.png'
+    image: '/images/sliderIcon/litmusTest-Icon.png'
 },
 "#litmusTestLabel":{
-	text: "'Litmus Test'"
+    text: "FFT"
 },
 "#staffPulseImage":{
-	image: '/images/sliderIcon/staffPluse-Icon.png'
+    image: '/images/sliderIcon/staffPluse-Icon.png'
 },
 "#staffPulseLabel":{
-	text: 'Staff Pulse'
+    text: 'Staff Pulse'
 },
 "#termsOfUseImage":{
-	image: '/images/sliderIcon/termOfUse-Icon.png'
+    image: '/images/sliderIcon/termOfUse-Icon.png'
 },
 "#termsOfUseLabel":{
-	text: 'Terms of Use'
+    text: 'Terms of Use'
 },
 "#notificationsImage":{
-	image: '/images/sliderIcon/notifications-Icon.png'
+    image: '/images/sliderIcon/notifications-Icon.png'
 },
 "#notificationsLabel":{
-	text: 'Notifications'
+    text: 'Notifications'
 },
 "#logoutImage":{
-	image: '/images/sliderIcon/logout-Icon.png'
+    image: '/images/sliderIcon/logout-Icon.png'
 },
 "#logoutLabel":{
-	text: 'Log Out'
+    text: 'Log Out'
 },
 ".labelStyle": {
-	font: {
-		fontSize: 15,
-		fontWeight: 'normal',
-		fontFamily: 'Myriad Apple'
-	},
-	color: '#fff',
-	left: 60
+    font: {
+        fontSize: 15,
+        fontWeight: 'normal',
+        fontFamily: 'Myriad Apple'
+    },
+    color: '#fff',
+    left: 60
 },
 "#indicatorTableViewRowView": {
-	width: 30,
-	height: 20,
-	right: 40,
-	touchEnabled: false,
-	borderRadius: 10,
-	right: 20
+    width: 30,
+    height: 20,
+    right: 40,
+    touchEnabled: false,
+    borderRadius: 10,
+    right: 20
 }
 
 

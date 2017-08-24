@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>com.abcoders.ideasforchange</id>
-    <name>IdeasForChange</name>
+    <name>Gyrus CW</name>
     <version>1.0</version>
     <publisher>mamun</publisher>
     <url>http://www.abcoder.com</url>
@@ -20,7 +20,7 @@
                 <key>CFBundleShortVersionString</key>
                 <string>1.0</string>
                 <key>CFBundleVersion</key>
-                <string>8</string>
+                <string>10</string>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>

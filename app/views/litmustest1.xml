@@ -34,6 +34,6 @@
                 <Label id="privacyLabel"/>
             </View>
         </ScrollView>
-        <Button id="nextButton" onTouchend="nextButtonClick" />
+        <Button id="nextButton" onTouchend="nextButtonClick" visible="false" />
     </Window>
 </Alloy>
