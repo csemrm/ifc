@@ -20,7 +20,7 @@
                 <key>CFBundleShortVersionString</key>
                 <string>1.0</string>
                 <key>CFBundleVersion</key>
-                <string>10</string>
+                <string>11</string>
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>
@@ -102,7 +102,7 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>5.5.1.GA</sdk-version>
+    <sdk-version>6.1.2.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
